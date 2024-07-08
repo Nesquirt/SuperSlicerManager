@@ -32,7 +32,7 @@ class SuperSlicerManaging:
         """Prompt the user to install, update, or uninstall SuperSlicer, and install Chocolatey if needed."""
         print("Choose an option:")
         if not choco_installed:
-            print("4) Install Chocolatey")
+            print("4) Install Chocolately")
 
         print("1) Install SuperSlicer")
         print("2) Update SuperSlicer")

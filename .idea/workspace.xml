@@ -4,28 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3824439b-63aa-4e56-82ff-14526ca355ee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/pythonProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SuperSlicerManaging.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SuperSlicerManaging.spec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/SuperSlicerManaging/Analysis-00.toc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/SuperSlicerManaging/EXE-00.toc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/SuperSlicerManaging/PKG-00.toc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/SuperSlicerManaging/PYZ-00.pyz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/SuperSlicerManaging/PYZ-00.toc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/SuperSlicerManaging/SuperSlicerManaging.pkg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/SuperSlicerManaging/base_library.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/SuperSlicerManaging/warn-SuperSlicerManaging.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/SuperSlicerManaging/xref-SuperSlicerManaging.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/choco_check.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/SuperSlicerManaging.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon.ico" afterDir="false" />
-    </list>
+    <list default="true" id="3824439b-63aa-4e56-82ff-14526ca355ee" name="Changes" comment="Created Manager" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,6 +20,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Nesquirt"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Nesquirt/SuperSlicerManager",
+    "accountId": "966f4a5d-965f-4b73-bd77-8a1c1cb8a57c"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 7
 }]]></component>
@@ -83,6 +74,15 @@
       <option name="presentableId" value="Default" />
       <updated>1720438513510</updated>
     </task>
+    <task id="LOCAL-00001" summary="Created Manager">
+      <option name="closed" value="true" />
+      <created>1720440294990</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1720440294990</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -98,5 +98,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Created Manager" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Manager" />
   </component>
 </project>
