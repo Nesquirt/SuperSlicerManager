@@ -1,4 +1,6 @@
 import subprocess
+import os
+
 
 class ChocoCheck:
     @staticmethod
@@ -20,7 +22,28 @@ class ChocoCheck:
             "iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))"
         )
         try:
-            subprocess.run(["powershell", "-NoProfile", "-ExecutionPolicy", "Bypass", "-Command", install_command], check=True)
-            print("Chocolatey è stato installato con successo.")
+            print(f"Executing command: {install_command}")
+            process = subprocess.Popen(
+                ["powershell", "-NoProfile", "-ExecutionPolicy", "Bypass", "-Command", install_command],
+                stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
+            stdout, stderr = process.communicate()
+
+            # Clear console
+            os.system('cls' if os.name == 'nt' else 'clear')
+
+            # Print stderr output (errors)
+            if stderr:
+                print(f"Error output:\n{stderr.decode('utf-8')}")
+            # Print stdout output (standard)
+            if stdout:
+                print(f"Standard output:\n{stdout.decode('utf-8')}")
+
+            # Wait for user input before continuing
+            input("Press ENTER to continue...")
+
+            if process.returncode != 0:
+                print(f"Error installing Chocolatey.")
+            else:
+                print("Chocolatey has been installed successfully.")
         except subprocess.CalledProcessError as e:
-            print(f"Errore durante l'installazione di Chocolatey: {e}")
+            print(f"Error installing Chocolatey: {e}")
