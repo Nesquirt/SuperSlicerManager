@@ -21,5 +21,6 @@ class ChocoCheck:
         )
         try:
             subprocess.run(["powershell", "-NoProfile", "-ExecutionPolicy", "Bypass", "-Command", install_command], check=True)
+            print("Chocolatey è stato installato con successo.")
         except subprocess.CalledProcessError as e:
             print(f"Errore durante l'installazione di Chocolatey: {e}")

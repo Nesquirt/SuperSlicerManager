@@ -30,25 +30,27 @@ class SuperSlicerManaging:
     @staticmethod
     def prompt_user(choco_installed):
         """Prompt the user to install, update, or uninstall SuperSlicer, and install Chocolatey if needed."""
-        print("Choose an option:")
-        if not choco_installed:
-            print("4) Install Chocolately")
+        while True:
+            print("\nScegli un'opzione:")
+            print("1) Install SuperSlicer")
+            print("2) Update SuperSlicer")
+            print("3) Uninstall SuperSlicer")
+            if not choco_installed:
+                print("4) Install Chocolatey")
 
-        print("1) Install SuperSlicer")
-        print("2) Update SuperSlicer")
-        print("3) Uninstall SuperSlicer")
-        choice = input("Insert the number of your choice: ")
+            choice = input("Inserisci il numero dell'opzione desiderata: ")
 
-        if choice == "1":
-            SuperSlicerManaging.install_superslicer()
-        elif choice == "2":
-            SuperSlicerManaging.update_superslicer()
-        elif choice == "3":
-            SuperSlicerManaging.uninstall_superslicer()
-        elif choice == "4" and not choco_installed:
-            ChocoCheck.install_chocolatey()
-        else:
-            print("Scelta non valida. Per favore riprova.")
+            if choice == "1":
+                SuperSlicerManaging.install_superslicer()
+            elif choice == "2":
+                SuperSlicerManaging.update_superslicer()
+            elif choice == "3":
+                SuperSlicerManaging.uninstall_superslicer()
+            elif choice == "4" and not choco_installed:
+                ChocoCheck.install_chocolatey()
+                choco_installed = True  # Chocolatey is now installed, so update the flag
+            else:
+                print("Scelta non valida. Per favore riprova.")
 
 
 def main():
